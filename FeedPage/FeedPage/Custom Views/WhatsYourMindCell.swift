@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WhatsYourMindView: View {
+struct WhatsYourMindCell: View {
     var body: some View {
         HStack {
             Image(AppStaticImages.profile)
@@ -26,6 +26,6 @@ struct WhatsYourMindView: View {
 
 struct WhatsYourMindView_Previews: PreviewProvider {
     static var previews: some View {
-        WhatsYourMindView()
+        WhatsYourMindCell()
     }
 }

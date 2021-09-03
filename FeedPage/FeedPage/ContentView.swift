@@ -8,9 +8,7 @@
 import SwiftUI
 
 
-struct ContentView: View {
-    
-    //MARK:- UI
+struct FeedView: View {
     var body: some View {
         ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false) {
             VStack(spacing: 4.0) {
@@ -21,7 +19,7 @@ struct ContentView: View {
                 Divider()
                 
                 //What's on your mind?
-                WhatsYourMindView()
+                WhatsYourMindCell()
                     .padding(.horizontal, 4.0)
                 
                 Divider()
@@ -71,6 +69,22 @@ struct ContentView: View {
                 
                 Spacer()
             }
+        }
+    }
+}
+
+
+struct ContentView: View {
+    
+    //MARK:- UI
+    var body: some View {
+        VStack {
+//            WhatsonYourMindView()
+//                .background(Color.gray.opacity(0.25))
+            
+            
+            FeedView()
+            
         }
     }
 }
